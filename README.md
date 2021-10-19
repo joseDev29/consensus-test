@@ -50,7 +50,7 @@
 - El archivo ddl.sql contiene el script de la base de datos
 - El archivo endpoints.json contiene toda la informacion de los endpoints disponibles
 
-###Inicio
+### Inicio
 
 1. Cree en la raiz del proyecto un archivo .env con las especificaciones del archivo .env-example, este contendra los datos de host y acceso de su ambiente MySQL
 2. Instale las dependencias utilizando el comando npm i
