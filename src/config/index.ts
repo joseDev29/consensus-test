@@ -8,3 +8,7 @@ export const db_config = {
   password: <string>process.env.DB_PASSWORD,
   name: <string>process.env.DB_NAME,
 };
+
+export const server_config = {
+  port: process.env.SERVER_PORT,
+};
