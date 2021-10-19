@@ -53,7 +53,8 @@
 ### Inicio
 
 1. Cree en la raiz del proyecto un archivo .env con las especificaciones del archivo .env-example, este contendra el puerto para el servidor y los datos de host y acceso de su ambiente MySQL
-2. Instale las dependencias utilizando el comando npm i
-3. Ejecute el comando npm run build
-4. Ejecute el comando npm start
-5. El proyecto se inciara por defecto en http://localhost:3000
+2. Ejecute los siguiente comandos desde la raiz del proyecto
+3. Instale las dependencias utilizando el comando " npm i "
+4. Ejecute el comando " npm run build " para compilar los archivos typescript a javascript
+5. Ejecute el comando " npm start " para iniciar el servidor de node
+6. El proyecto se inciara por defecto en http://localhost:3000 o en el puerto definido en el .env
