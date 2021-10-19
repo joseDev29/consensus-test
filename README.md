@@ -52,7 +52,7 @@
 
 ### Inicio
 
-1. Cree en la raiz del proyecto un archivo .env con las especificaciones del archivo .env-example, este contendra los datos de host y acceso de su ambiente MySQL
+1. Cree en la raiz del proyecto un archivo .env con las especificaciones del archivo .env-example, este contendra el puerto para el servidor y los datos de host y acceso de su ambiente MySQL
 2. Instale las dependencias utilizando el comando npm i
 3. Ejecute el comando npm run build
 4. Ejecute el comando npm start
