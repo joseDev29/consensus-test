@@ -1,7 +1,8 @@
 import { Request, Response } from "express";
-import { Product } from "../models/product";
-import { Store } from "../models/store";
-import { StoreProduct } from "../models/store_product";
+
+import { Product } from "../../models/product";
+import { Store } from "../../models/store";
+import { StoreProduct } from "../../models/store_product";
 
 export const createStock = async (req: Request, res: Response) => {
   const { store_id, product_id, stock } = req.body;

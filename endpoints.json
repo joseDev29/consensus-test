@@ -1,0 +1,68 @@
+[
+    {
+        "path": "/store",
+        "method": "GET",
+        "desc": "Devuelve una lista con todos los almacenes"
+    },
+    {
+        "path": "/store:id",
+        "method": "GET",
+        "desc": "Retorna el almacen referenciado en el id"
+    },
+    {
+        "path": "/store",
+        "method": "POST",
+        "body": { "name": "string" },
+        "desc": "Crea un nuevo almacen"
+    },
+    {
+        "path": "/store/:id",
+        "method": "PUT",
+        "body": { "name": "string" },
+        "desc": "Actualiza el almacen referenciado en el id"
+    },
+    {
+        "path": "/product",
+        "method": "GET",
+        "desc": "Retorna una lista con todos los productos y el stock total de cada uno de los productos"
+    },
+    {
+        "path": "/product:id",
+        "method": "GET",
+        "desc": "Retorna el producto referenciado en el id y su stock total"
+    },
+    {
+        "path": "/product",
+        "method": "POST",
+        "body": { "name": "string", "description": "string" },
+        "desc": "Crea un nuevo producto"
+    },
+    {
+        "path": "/product/:id",
+        "method": "PUT",
+        "body": { "name": "string", "description": "string" },
+        "desc": "Actualiza el producto referenciado en el id"
+    },
+    {
+        "path": "/store-product/:store_id/stock/:product_id",
+        "method": "GET",
+        "desc": "Devuelve la informacion de stock disponbile en un almacen especifico (referenciado en store-id) del producto referenciado en product_id"
+    },
+    {
+        "path": "/store-product/create-stock",
+        "method":"POST",
+        "body": {"store_id": "string", "product_id": "string", "stock": "number" } ,
+        "desc": "Crea nuevo stock de un producto en un alamcen especifico, en caso de que ya haya un registro de stock, el valor ingresado se suma al stock existente"
+    },
+    {
+        "path": "/store-product/transfer-stock",
+        "method":"POST",
+        "body": {"store_origin_id": "string", "store_destination_id": "string", "product_id": "string", "amount": "number" } ,
+        "desc": "Transfiere stock de un producto especifico de un almacen a otro y genera un registro de transferencia en la base de datos"
+    },
+    {
+        "path": "/store-product/all-products/:store_id",
+        "method": "GET",
+        "desc": "Devuelve todos los productos del almacen especificado en store_id con el stock del producto en el ese almacen"
+    }
+]

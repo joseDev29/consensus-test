@@ -1,4 +1,4 @@
-import express, { Application } from "express";
+import express, { Application, Request, Response } from "express";
 import db from "./db/connection";
 
 import StoreRouter from "./routes/store.routes";
@@ -16,6 +16,16 @@ export class App {
     this.middlewares();
     this.routes();
     this.dbConnection();
+
+    //Error handler
+    this.app.use((err, req: Request, res: Response) => {
+      console.log("Server Error: ", err);
+
+      res.status(500).json({
+        ok: false,
+        msg: "Internal server error, sorry!",
+      });
+    });
   }
 
   async dbConnection() {

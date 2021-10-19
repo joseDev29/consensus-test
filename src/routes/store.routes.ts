@@ -1,11 +1,9 @@
 import { Router } from "express";
 
-import {
-  createStore,
-  getStoreById,
-  getStores,
-  updateStore,
-} from "../controllers/store.controller";
+import { createStore } from "../controllers/store/createStore";
+import { getStoreById } from "../controllers/store/getStoreById";
+import { getStores } from "../controllers/store/getStores";
+import { updateStore } from "../controllers/store/updateStore";
 
 const router = Router();
 
