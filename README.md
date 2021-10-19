@@ -31,16 +31,17 @@
     	updatedAt
     }
 
-######Registro de transferencias de stock entre bodegas
-TransferLogs {
-id,
-store_origin_id,
-store_destination_id,
-product_id,
-amount,
-createdAt,
-updatedAt
-}
+###### Registro de transferencias de stock entre bodegas
+
+    TransferLogs {
+    	id,
+    	store_origin_id,
+    	store_destination_id,
+    	product_id,
+    	amount,
+    	createdAt,
+    	updatedAt
+    }
 
 ### Notas
 
